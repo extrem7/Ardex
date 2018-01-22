@@ -1,0 +1,65 @@
+@gray: #3d3d3d;
+@green: #17af5b;
+@lg: "max-width: 1200px";
+@md: "max-width: 992px";
+@sm: "max-width: 768px";
+@xs: "max-width: 578px";
+
+.placeholder(@rules) {
+
+  &::-webkit-input-placeholder {
+    @rules();
+  }
+  &:-moz-placeholder {
+    @rules();
+  }
+  &::-moz-placeholder {
+    @rules();
+  }
+  &:-ms-input-placeholder {
+    @rules();
+  }
+}
+
+.btn-hover() {
+  transition: background .2s;
+  &:hover {
+    background: darken(@green, 5%);
+  }
+}
+
+.fit-content {
+  width: fit-content;
+  width: intrinsic; /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content; /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+}
+
+.flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute-center() {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hide-number-arrows() {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  -moz-appearance: textfield;
+}

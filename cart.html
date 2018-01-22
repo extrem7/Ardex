@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ardex</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="cart-page">
+<!--header-->
+<header class="header">
+    <button type="button" class="toggle-btn">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="top-row">
+        <div class="container">
+            <ul class="menu flex-column flex-md-row d-md-flex">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="catalog.html">Каталог товаров</a></li>
+                <li><a href="complex.html">Комплексное решение</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-row">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <a href="" class="logo"><img src="images/header-logo.png" alt=""></a>
+            <div class="info d-flex align-items-center">
+                <img src="images/phone-icon.png" alt="">
+                <div class="text">
+                    <a href="tel:8 (495) 117-29-15" class="tel">8 (495) 117-29-15</a>
+                    <p>пн-пт / 09:00-20:00</p>
+                </div>
+            </div>
+            <a data-toggle="#" class="callback button">Обратный звонок</a>
+            <div class="cart d-flex align-items-center">
+                <a href="" class="cart-icon"><span class="cart-counter">5</span></a>
+                <div class="text">
+                    <a href="" class="count">5 товаров</a>
+                    <div class="sum">54 000 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--header-->
+<section class="cart-step">
+    <div class="container">
+        <h1 class="section-title">Корзина</h1>
+        <p class="title-middle">ШАГ 1. Проверьте правильность заказа</p>
+        <form method="post" class="cart-form">
+            <table>
+                <thead>
+                <tr>
+                    <th class="product-thumbnail">Товар</th>
+                    <th class="product-name">Наименование</th>
+                    <th class="product-quantity">Количество</th>
+                    <th class="product-price">Цена</th>
+                    <th class="product-subtotal">Всего</th>
+                    <th class="product-remove">Удалить</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="woocommerce-cart-form__cart-item cart_item">
+                    <td class="product-thumbnail">
+                        <a href=""><img width="200" height="200" src="images/product-1.png"></a>
+                    </td>
+                    <td class="product-name" data-title="Product">
+                        <a href="">Стяжка ARDEX A 60<span>Код товара: 102315</span></a>
+                    </td>
+                    <td class="product-quantity" data-title="Quantity">
+                        <div class="quantity">
+                            <!--<label class="screen-reader-text" for="quantity_5a64b0965b439">Quantity</label>-->
+                            <button class="minus">-</button>
+                            <input type="number" id="quantity_5a64b0965b439" class="input-text qty text" step="1"
+                                   min="0"
+                                   max="" name="cart[a5bfc9e07964f8dddeb95fc584cd965d][qty]" value="2"
+                                   title="Колличество"
+                                   size="4"
+                                   pattern="[0-9]*" inputmode="numeric">
+                            <button class="plus">+</button>
+                        </div>
+                    </td>
+                    <td class="product-price" data-title="Price">
+                        <span class="woocommerce-Price-amount amount">2 500 руб. </span></td>
+                    <td class="product-subtotal" data-title="Total">
+                        <span class="woocommerce-Price-amount amount">5000 руб.</span></td>
+                    <td class="product-remove">
+                        <a href="" class="remove" data-product_id="" data-product_sku=""></a></td>
+                </tr>
+                <tr class="woocommerce-cart-form__cart-item cart_item">
+                    <td class="product-thumbnail">
+                        <a href=""><img src="images/product-4.png"></a>
+                    </td>
+                    <td class="product-name" data-title="Product">
+                        <a href="">Стяжка ARDEX A 65<span>Код товара: 102325</span></a>
+                    </td>
+                    <td class="product-quantity" data-title="Quantity">
+                        <div class="quantity">
+                            <!--<label class="screen-reader-text" for="quantity_5a64b0965b439">Quantity</label>-->
+                            <button class="minus">-</button>
+                            <input type="number" id="quantity_5a64b0965b439" class="input-text qty text" step="1"
+                                   min="0"
+                                   max="" name="cart[a5bfc9e07964f8dddeb95fc584cd965d][qty]" value="3"
+                                   title="Колличество"
+                                   size="4"
+                                   pattern="[0-9]*" inputmode="numeric">
+                            <button class="plus">+</button>
+                        </div>
+                    </td>
+                    <td class="product-price" data-title="Price">
+                        <span class="woocommerce-Price-amount amount">2 500 руб. </span></td>
+                    <td class="product-subtotal" data-title="Total">
+                        <span class="woocommerce-Price-amount amount">7500 руб.</span></td>
+                    <td class="product-remove">
+                        <a href="" class="remove" data-product_id="" data-product_sku=""></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="actions">
+                <p class="subtotal">Итого: <b>35 145 руб.</b></p>
+                <input type="submit" class="button" name="update_cart" value="Обновить">
+                <input type="hidden" id="_wpnonce" name="_wpnonce" value="f937b38072">
+                <input type="hidden" name="_wp_http_referer" value="/storefront/cart/">
+            </div>
+        </form>
+    </div>
+</section>
+<section class="order-step">
+    <div class="container">
+        <h2 class="title-middle">ШАГ 2. Ваши контактные данные</h2>
+        <form action="" class="checkout row justify-content-center justify-content-lg-between align-items-baseline">
+            <div class="col-lg-5 col-md-8 left">
+                <div class="d-flex flex-column">
+                    <p class="d-flex justify-content-between align-items-center">Ваше Имя: <input type="text"></p>
+                    <p class="d-flex justify-content-between align-items-center">Телефон: <input type="tel"></p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8">
+                <p class="d-flex align-items-center">Доставка:   
+                    <input type="radio" name="delivery" id="delivery-true">
+                    <label for="delivery-true">Да</label>
+                    <input type="radio" name="delivery" id="delivery-false" checked>
+                    <label for="delivery-false">Нет</label>
+                </p>
+                <p class="delivery">Адрес доставки: <input type="text" id="delivery"></p>
+                <p class="d-flex flex-wrap align-items-center ">Доставка:   
+                    <input type="radio" name="payment" id="real" checked>
+                    <label for="real">Наличный расчет</label>
+                    <input type="radio" name="payment" id="virtual">
+                    <label for="virtual">Безналичный расчет</label>
+                </p>
+            </div>
+            <div class="col-12 d-flex flex-column flex-sm-row justify-content-center align-items-center justify-content-lg-start">
+                <a href="" class="return">Продолжить покупку</a>
+                <input type="submit" class="button" value="Оформить заказ">
+            </div>
+        </form>
+    </div>
+</section>
+<!--footer-->
+<footer class="footer">
+    <div class="container d-flex flex-wrap flex-lg-nowrap justify-content-around justify-content-lg-between">
+        <div class="group">
+            <p>ARDEX group:</p>
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <img src="images/group-1.png" alt="">
+                <img src="images/group-2.png" alt="">
+                <img src="images/group-3.png" alt="">
+                <img src="images/group-4.png" alt="">
+            </div>
+        </div>
+        <div class="question">
+            <p class="title">Остались вопросы?</p>
+            <p>Тогда позвоните нам или оставьте заявку<br>
+                и мы перезвоним</p>
+            <button data-toggle="#" class="callback button">Оставить заявку</button>
+        </div>
+        <div class="social">
+            <p>Мы в социальных сетях:</p>
+            <div class="d-flex justify-content-between align-items-end">
+                <a href="#"><img src="images/vk-icon.png" alt=""></a>
+                <a href="#"><img src="images/fb-icon.png" alt=""></a>
+                <a href="#"><img src="images/in-icon.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="ES6/main.js"></script>
+</body>
+</html>

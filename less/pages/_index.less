@@ -1,0 +1,451 @@
+.main {
+  margin-top: 178px;
+  padding: 280px 0 250px;
+  background: url("../images/index/main-background.png") no-repeat center;
+  background-size: cover;
+  color: white;
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 55px;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      .size(516px, 76px);
+      background: url("../images/index/main-title.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+  }
+  .text {
+    font-size: 24px;
+  }
+}
+
+.benefits {
+  width: 1170px;
+  padding-bottom: 65px;
+  .section-title {
+    span {
+      .size(281px, 66px);
+      background: url("../images/index/benefit-title.png");
+    }
+  }
+  table {
+    width: 100%;
+    color: @gray;
+    tr {
+      &:first-child {
+        td {
+          font-size: 30px;
+          &:nth-child(2) {
+            font-size: 40px;
+            color: @green;
+          }
+        }
+      }
+      &:nth-child(n+2) {
+        td:nth-child(2) {
+          font-size: 30px;
+          color: @green;
+        }
+        td:nth-child(3) {
+          font-weight: 600;
+          font-size: 20px;
+        }
+      }
+      &:last-child {
+      }
+    }
+    td {
+      padding-bottom: 30px;
+      &:first-child {
+        font-size: 24px;
+      }
+      &:nth-child(2) {
+        width: 20%;
+        text-align: center;
+        font-weight: 600;
+        color: @gray;
+        span {
+          font-size: 20px;
+        }
+      }
+      &:nth-child(3) {
+        width: 20%;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.most-popular {
+  background: url("../images/index/popular-background.png") no-repeat center;
+  background-size: cover;
+  padding-bottom: 60px;
+  .section-title {
+    span {
+      .size(157px, 71px);
+      background: url("../images/index/products-title.png");
+    }
+  }
+  .product-item {
+    background: white;
+    border: 2px solid #e3dfdd;
+    width: 100%;
+    padding: 10px 10px 15px;
+    margin-bottom: 60px;
+    .photo {
+      .flex-center();
+      height: 320px;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 80%;
+      max-height: 100%;
+      object-fit: contain;
+      transition: transform .3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: @gray;
+    }
+    .articulus {
+      color: #a8a8a8;
+      font-size: 17px;
+      line-height: 17px;
+      font-weight: lighter;
+      margin-bottom: 20px;
+    }
+    .buy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .price {
+      color: #464646;
+      font-size: 21px;
+      font-weight: 600;
+
+    }
+    .add-cart {
+      .border-radius(19px);
+      background: @green;
+      color: white;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 13px 38px;
+      .btn-hover();
+    }
+  }
+  .catalog {
+    .border-radius(19px);
+    background: @green;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 65px 20px 25px;
+    margin: 40px auto;
+    display: block;
+    .fit-content();
+    .btn-hover();
+  }
+}
+
+.advantages {
+  background: @green;
+  padding-bottom: 80px;
+  .section-title {
+    color: @gray;
+    span {
+      .size(163px, 50px);
+      background: url("../images/index/advantages-title.png");
+      color: @green;
+    }
+  }
+  .item {
+    margin-bottom: 102px;
+    text-align: center;
+    color: @gray;
+    font-size: 24px;
+  }
+  img {
+    margin-bottom: 30px;
+  }
+  .text {
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+  }
+}
+
+.work-master {
+  padding: 40px 0 0;
+  background: url("../images/index/master.png") no-repeat center;
+  background-size: cover;
+  .container {
+    position: relative;
+    width: 1170px;
+  }
+  .section-title {
+    position: relative;
+    z-index: 1;
+    span {
+      .size(250px, 66px);
+      background: url("../images/index/master-title.png");
+    }
+  }
+  .row-about {
+    position: relative;
+    padding-bottom: 250px;
+    z-index: 1;
+    .item {
+      .size(286px, 240px);
+      background: url("../images/index/master-1.png");
+      color: white;
+      padding: 10px 25px 0;
+      .head {
+        padding-left: 15px;
+        font-size: 24px;
+        line-height: 48px;
+        text-transform: uppercase;
+      }
+      .big {
+        font-family: "Myriad Pro", MuseoSans, sans-serif;
+        font-size: 80px;
+        line-height: 80px;
+        font-weight: 400;
+        text-align: center;
+      }
+      .text {
+        font-size: 18px;
+        text-align: center;
+      }
+      &:nth-child(2) {
+        padding-top: 30px;
+        .size(317px, 261px);
+        background: url("../images/index/master-2.png");
+      }
+      &:last-child {
+        .size(295px, 237px);
+        background: url("../images/index/master-3.png");
+      }
+    }
+  }
+}
+
+.works {
+  padding-bottom: 20px;
+  background-color: #f0f0f0;
+  span {
+    .size(236px, 66px);
+    background: url("../images/index/works-title.png");
+  }
+  .slider {
+    width: 100%;
+    .slick-track {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slick-current {
+      width: 64vw !important;
+      img {
+        height: 41vw;
+      }
+    }
+    .item:not(.slick-current) {
+      img {
+        height: 39vw;
+      }
+    }
+    .slick-arrow {
+      .size(90px);
+      background: url("../images/index/slider-left.png");
+      position: absolute;
+      top: 50%;
+      left: 20vw;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+      outline: none;
+      transition: all .2s;
+      &:hover{
+        left: 19.5vw;
+      }
+      &.next {
+        background: url("../images/index/slider-right.png");
+        left: auto;
+        right: 20vw;
+        &:hover{
+          left: auto;
+          right: 19.5vw;
+        }
+      }
+    }
+  }
+}
+
+.certificate {
+  span {
+    .size(177px, 66px);
+    background: url("../images/index/certificate-title.png");
+  }
+  .item {
+    margin: 0 13px 25px;
+    outline: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .work-master {
+    background-position-x: -28vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    padding: 75px 0;
+    .title {
+      font-size: 33px;
+      line-height: 44px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .benefits {
+    table {
+      td:first-child {
+        font-size: 20px;
+      }
+      tr:nth-child(n+2) td:nth-child(2) {
+        width: auto;
+      }
+      tr:first-child td:nth-child(2) {
+        font-size: 30px;
+      }
+      tr:nth-child(n+2) td:nth-child(2) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .work-master {
+    background: none;
+    .row-about {
+      padding-bottom: 20px;
+    }
+  }
+
+  .certificate {
+    .section-title {
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    margin-top: 0;
+    .title {
+      font-size: 30px;
+      br {
+        display: none;
+      }
+      span {
+        background: none !important;
+        width: auto !important;
+        height: auto !important;
+        color: white;
+      }
+    }
+    p {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .benefits {
+    max-width: 100%;
+    table{
+      tr{
+        display: flex;
+        align-items: center;
+        flex-wrap:wrap;
+        &:first-child td{
+          font-size: 26px;
+        }
+      }
+      td{
+        width: 100%!important;
+        &:nth-child(2), &:nth-child(3){
+          width: 50%!important;
+        }
+      }
+    }
+  }
+
+  .most-popular {
+    .product-item{
+      max-width: 380px;
+      margin: 0 auto 25px;
+    }
+    .catalog {
+      padding: 20px;
+      font-size: 19px;
+    }
+  }
+
+  .advantages {
+    .section-title {
+      span {
+        color: @gray;
+      }
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+    .text {
+      font-size: 18px;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .work-master {
+    padding: 0;
+    .container {
+      width: 100%;
+    }
+    .row-about{
+      padding-bottom: 0;
+    }
+  }
+
+  .works{
+    .slider{
+      .slick-current{
+        width: 100vw!important;
+        img{
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

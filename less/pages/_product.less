@@ -1,0 +1,138 @@
+
+.content {
+  margin-top: 178px;
+  padding: 115px 0 60px;
+  background-color: #fafafa;
+  .return {
+    .fit-content();
+    margin: 0 15px 45px auto;
+    color: #919191;
+    font-family: Roboto, MuseoSans, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    &:after {
+      .size(20px);
+      content: '';
+      background: url("../images/close.png");
+      position: absolute;
+      top: 2px;
+      right: -25px;
+      display: inline-block;
+    }
+  }
+}
+
+.product {
+  .photo {
+    margin-top: 15px;
+    background: white;
+    .box-shadow(0 0 16.7px 1.3px rgba(183, 189, 186, 0.75));
+    .flex-center();
+    height: 440px;
+  }
+  img {
+    max-width: 84%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform .3s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  .details {
+    padding-left: 70px;
+  }
+  .articulus {
+    color: #919191;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: @gray;
+  }
+  .big {
+    color: @gray;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  hr {
+    height: 2px;
+    border: none; //
+    background-color: #dadada;
+    margin: 20px 0 40px;
+  }
+  .price {
+    color: @gray;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .status {
+    font-size: 15px;
+    margin-bottom: 45px;
+    color: #919191;
+    span {
+      color: @gray;
+    }
+  }
+  .add-cart {
+    .border-radius(29px);
+    background: @green;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    .btn-hover();
+  }
+}
+
+.buy-also {
+  padding: 45px 15px 60px;
+  .title-middle {
+    font-size: 24px;
+    color: @gray;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product {
+    .details {
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 25px;
+    margin-top: 0;
+    .return {
+      margin: 0 auto 25px;
+    }
+  }
+
+  .product {
+    text-align: center;
+    .title{
+      font-size: 30px;
+    }
+    .photo {
+      margin: 0 auto 35px;
+      height: 300px;
+      max-width: 340px;
+    }
+  }
+}

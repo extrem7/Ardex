@@ -1,0 +1,129 @@
+.header {
+  background: white;
+  .top-row {
+    background: @gray;
+    font-size: 15px;
+  }
+  .menu {
+    padding: 20px 0 18px;
+    li {
+      margin-right: 40px;
+      color: white;
+      font-weight: 600;
+      a{
+        transition: color .2s;
+      }
+      &:hover {
+        color: @green;
+      }
+    }
+  }
+  .main-row {
+    padding: 20px 0 25px;
+  }
+  .info {
+    img {
+      margin-right: 7px;
+    }
+    .text {
+      padding-top: 12px;
+      a {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: @gray;
+      }
+      p {
+        color: #9a9a9a;
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .callback {
+    .border-radius(29px);
+    background: @green;
+    color: white !important;
+    padding: 20px 35px 20px 25px;
+    transition: background .2s;
+    font-weight: 600;
+    &:hover {
+      background: darken(@green, 5%);
+    }
+  }
+  .cart {
+    position: relative;
+    &-icon {
+      .size(54px, 51px);
+      background: url("../images/cart-icon.png");
+      margin-right: 6px;
+    }
+    &-counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .size(24px);
+      border-radius: 50%;
+      background: @green;
+      color: white;
+      font-size: 12px;
+      font-weight: 400;
+      position: absolute;
+      top: -12px;
+      left: 33px;
+    }
+    .count {
+      font-size: 14px;
+      font-weight: 300;
+      color: #9a9a9a;
+      text-decoration: underline;
+    }
+    .sum {
+      font-size: 18px;
+      font-weight: 600;
+      color: @gray;
+      line-height: 23px;
+    }
+  }
+  &.fixed-top{
+    .box-shadow(0 0 16.7px 1.3px rgba(183, 189, 186, 0.75));
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    .menu{
+      font-size: 14px;
+    }
+    .info {
+      .text {
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+    .callback {
+      padding: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    .menu{
+      display: none;
+      text-align: center;
+      li{
+        margin: 0 0 15px;
+        font-size: 18px;
+      }
+    }
+    .main-row {
+      .logo, .info, .callback {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
